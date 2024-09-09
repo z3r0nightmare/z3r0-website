@@ -12,18 +12,13 @@
     <title>Home</title>
 </head>
 <style>
-body {
-    background-color: #1d1d1d;
-    color: #fdffff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh
-}
+
 :root {
     --blue: #4472C4;
     --announcementbg: #4a4a4a
 }
     body {
+        padding: 0;
         margin: 0;
         height: 100vh;
         display: flex;
@@ -37,7 +32,7 @@ body {
     }
 
     h1 {
-        font-size: 6rem; /* Large text size for the heading */
+        font-size: 3rem; /* Large text size for the heading */
         margin-bottom: 20px; /* Space between the heading and ASCII art */
         font-family: sans-serif;
     }
@@ -48,7 +43,7 @@ body {
         background-color: black; /* Background color of the ASCII art */
         color: #00FF00; /* Text color of the ASCII art (green) */
         padding: 10px;
-        border: 1px solid #00FF00; /* Green border around the ASCII art */
+        border: 1px solid hsl(120, 100%, 50%); /* Green border around the ASCII art */
         border-radius: 4px;
         box-shadow: 0 4px 8px rgba(0, 255, 0, 0.3); /* Optional shadow for better visibility */
     }
@@ -84,17 +79,19 @@ body {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-  font-size: 350px;
+  font-size: 70px;
 }
 #root {
     z-index: 1;
-    padding: 20px;
+    padding: 200px;
+    margin: 300px;
     font-family: IBM Plex Mono,monospace;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     height: 100%;
-    gap: 20px
+    gap: 10px;
+    
 }
 #navbar{
     z-index: 10000;
@@ -110,8 +107,10 @@ body {
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
-    font-weight: 600
+    font-weight: 600;
+    width: 100%;
 }
+
 
 .navbar-icon-container {
     display: flex;
@@ -129,7 +128,7 @@ body {
 
 .nav-menu-item {
     cursor: pointer;
-    color: #fff;
+    color: #00FF00;
     list-style: none
 }
 
@@ -172,9 +171,10 @@ body {
         <a class="nav-menu-item">Contact</a>
     </ul>
     </div>
-        <h1 align = 'center' class = "noto-sans-mono-bold" font->z3r0</h1>
+        <h1 align = 'center' class = "noto-sans-mono-bold" >Welcome to my personal website</h1>
+    <img src="./assets/istockphoto-1307831372-612x612-pixelicious-removebg-preview.png" align = 'center'>
     <div>
-        
+
             <pre style="text-align: center; font-family: monospace; white-space: pre-wrap; background-color: #000000; padding: 10px; border: 1px solid#36bb01; border-radius: 4px;">
                 ..       ..                      
                 .xHL                    x .d88"  x .d88"                       
@@ -221,6 +221,6 @@ body {
             </pre>
     </div>
 </div>
-
+hi
 </body>
 </html>
